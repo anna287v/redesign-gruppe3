@@ -215,7 +215,6 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
     width: 200px;
-    position: relative;
 
 }
 
@@ -231,11 +230,30 @@ figcaption {
     margin-top: -0.8;
 }
 
-#upcoming button {
+.events {
     margin-top: 1rem;
-    position: absolute;
-    left: 70vw;
+    margin-left: 25vw;
 
+}
+
+/****UPCOMING SLUT****/
+
+/****BOOKS*****/
+
+#book .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#book .img {
+    width: 50vw;
+    height: 40vw;
+    background-color: black;
+}
+
+#book p {
+    text-align: center;
 }
 
 /***Footer****/
