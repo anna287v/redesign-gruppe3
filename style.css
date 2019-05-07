@@ -256,12 +256,92 @@ figcaption {
     text-align: center;
 }
 
+/****BOOK SLUT****/
+
+/****NEWS****/
+/* Add padding to containers */
+.container {
+    padding: 1rem;
+}
+
+/* Full-width input fields */
+input[type=text] {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.3rem 0 0.3rem 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+.registerbtn {
+    background-color: skyblue;
+    color: white;
+    padding: 1rem 1rem;
+    margin-left: 25vw;
+    border: none;
+    cursor: pointer;
+    width: 30vw;
+    opacity: 0.9;
+}
+
+/*.registerbtn:hover {
+    opacity: 1;
+}*/
+
+/****NEWS SLUT****/
+/****MEMBERSHIP****/
+
+#membership p {
+    text-align: center;
+}
+
+#membership .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/****MEMBERSHIP SLUT****/
+
+/****FIND****/
+
+.mapouter {
+    position: relative;
+    width: 40vw;
+    height: 48vw;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none;
+    height: 100vw;
+    width: 85vw;
+    margin-bottom: 10vw;
+
+}
+
+#find p {
+    text-align: center;
+}
+
+/***FIND SLUT****/
+
+/*****/
+
 /***Footer****/
 
 footer {
     text-align: center;
     background-color: #a3c2db;
     padding: 2px;
+    height: 4vw;
 
 }
 
