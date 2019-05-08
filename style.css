@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -30,15 +31,21 @@ li {
 
 }
 
+
 /****HEADER + NAVIGATION****/
-/*
 
 header {
     position: fixed;
-    background: rgba(27, 35, 38, 0.24);
-
-
+    /*   background: #24303f;*/
     width: 100%;
+    z-index: 40;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 
@@ -69,14 +76,29 @@ nav a:hover {
     text-decoration: underline;
 
 }
-*/
 
 
 /*****GENERELT*****/
 
 .sectionwrapper {
-    padding: 0 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
 }
+
+.sectionwrapper_splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 
 h1 {
     font-size: 1.2rem;
@@ -119,40 +141,32 @@ p {
 
 }
 
-figcaption {
-    font-family: 'Lato', sans-serif;
-    font-weight: lighter;
-    color: #000000;
-
-
-}
-
-figcaption {
-    font-style: italic;
-    font-size: 1rem;
-}
-
 /***SPLASH***/
 
 
 
-#splash {
+#splash .splashimg {
     width: 100vw;
     height: 155vw;
     background-color: lightblue;
     max-width: none;
     background-size: cover;
-    /*  background-position: 50%;*/
-
-}
-
-#splash .sectionwrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 50vw;
     flex-direction: column;
+    margin-top: 0;
+    position: relative;
+
+
+
+    /*  background-position: 50%;*/
+
+}
+
+#splash {
+    margin-bottom: 0;
 }
 
 #logo {
@@ -189,7 +203,7 @@ figcaption {
 
 #about p {
     text-align: center;
-    margin-top: 2rem;
+    line-height: 1.7rem;
 
 
 }
@@ -198,24 +212,44 @@ figcaption {
 
 /****UPCOMING*****/
 
-
-#upcoming .col {
+#upcoming .content_row {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
 
 }
 
-.up_img {
-    width: 25vw;
-    height: 30vw;
+#upcoming .row {
+    width: 20vw;
+    margin: 1rem;
+    flex-basis: 300px;
+    display: flex;
+
+
+
+}
+
+#upcoming .up_img {
+    width: 50vw;
+    height: 40vw;
     background-color: black;
     margin-top: 1rem;
+    flex-grow: 1;
+
 }
 
 #upcoming .txt {
     display: flex;
-    flex-wrap: wrap;
-    width: 200px;
+    width: 40vw;
+    flex-direction: column;
+    flex-grow: 2;
+    align-items: space-around;
+    margin-left: 1rem;
+    /* flex-grow: 1;
+    flex-grow: 200px;*/
+
 
 }
 
@@ -231,11 +265,7 @@ figcaption {
     margin-top: -0.8;
 }
 
-.events {
-    margin-top: 1rem;
-    margin-left: 25vw;
-
-}
+.events {}
 
 /****UPCOMING SLUT****/
 
@@ -259,10 +289,27 @@ figcaption {
 
 /****BOOK SLUT****/
 
+.row_frontpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+
+}
+
 /****NEWS****/
 /* Add padding to containers */
+#news p {
+    text-align: center;
+    width: 25rem;
+}
+
 .container {
     padding: 1rem;
+    width: 25rem;
 }
 
 /* Full-width input fields */
@@ -285,10 +332,10 @@ input[type=text]:focus {
     background-color: skyblue;
     color: white;
     padding: 1rem 1rem;
-    margin-left: 25vw;
     border: none;
     cursor: pointer;
-    width: 30vw;
+    width: 5rem;
+
     opacity: 0.9;
 }
 
@@ -301,13 +348,10 @@ input[type=text]:focus {
 
 #membership p {
     text-align: center;
+    width: 25rem;
 }
 
-#membership .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 /****MEMBERSHIP SLUT****/
 
@@ -330,22 +374,27 @@ input[type=text]:focus {
 
 #find p {
     text-align: center;
+    width: 25rem;
+}
+
+#find {
+    width: 25rem;
 }
 
 /***FIND SLUT****/
 
 /*****/
 
+
+
 /***Footer****/
 
 footer {
     text-align: center;
     background-color: #a3c2db;
-    padding: 2px;
-
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    ;
     align-items: center;
     flex-wrap: wrap;
 
@@ -356,7 +405,8 @@ footer p {
     color: #1d1b29;
     padding-top: 0.5rem;
     text-align: center;
-    width: 25vw;
+    width: 20rem;
+
 
 
 }
@@ -365,14 +415,6 @@ footer p {
 
 /***********OM SIDE*****************/
 
-.sectionwrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    flex-direction: column;
-
-}
 
 .video {
     width: 50vw;
@@ -563,10 +605,7 @@ footer p {
 /*******************************************MEDLEMSKABER SLUT*************************************/
 /***MEDIA QUERY MIN 450px ***/
 @media screen and (min-width: 450px) {
-    #splash {
-        background-image: url(img/splash.jpg);
-        max-width: none;
-        background-size: cover;
+    #splash .splashimg {
         width: 100vw;
         height: 140vw;
         background-position: 72%;
@@ -576,19 +615,16 @@ footer p {
 
 
 @media screen and (min-width: 525px) {
-    #splash {
-        background-image: url(img/splash.jpg);
-        max-width: none;
-        background-size: cover;
+    #splash .splashimg {
         width: 100vw;
         height: 120vw;
-        background-position: 72%;
     }
+
 }
 
 @media screen and (min-width: 600px) {
 
-    #splash {
+    #splash .splashimg {
         width: 100vw;
         height: 80vw;
         background-position: 70% 50%;
@@ -597,20 +633,33 @@ footer p {
 
 
     @media (orientation: landscape) {
-        #splash {
+        #splash .splashimg {
             width: 100vw;
             height: 56.25vw;
-            background-position: 0% 0%;
-            background-image: url(image/splash.jpg);
         }
     }
 
     @media screen and (min-width: 800px) {
 
 
+
+        #logoweb {
+            width: 25vw;
+            height: 4.74vw;
+            background-image: url(img/logo.svg);
+            background-size: cover;
+            margin: 0 auto;
+        }
+
+        #logo {
+            display: none;
+
+
+        }
+
         header nav {
             flex-direction: row;
-            justify-content: flex-end;
+            justify-content: center;
 
         }
 
@@ -625,54 +674,36 @@ footer p {
 
         @media screen and (min-width: 950px) {
 
-            body {
-                margin: 0;
-                overflow-x: hidden;
-                background-image: url(img/jon_tyson_opacity.jpg);
-                background-attachment: fixed;
-                background-size: cover;
-
-            }
-
 
 
             @media screen and (min-width: 1200px) {
                 /*generelt*/
 
-                .sectionwrapper {
-                    padding: 0 1rem;
-                }
 
-                h1 {
+
+                /*    h1 {
                     margin: 1rem 1rem 0.5rem 1rem;
 
-                }
+                }*/
 
                 /*SPlash*/
-                #splash {
-                    width: 100vw;
-                    height: 20vw;
-                    background-position: 0% 20%;
+                #splash .splashimg {
+                    width: 110vw;
+                    height: 40vw;
+
+
+
                 }
 
-                #splash h1 {
+
+
+                /*  #splash h1 {
                     margin: auto;
                     text-align: center;
                     padding-top: 9vw;
                     font-size: 2rem;
 
 
-                }
+                }*/
 
                 /*FORSIDE*/
-                #forside .sectionwrapper {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    margin-top: 5rem;
-                }
-
-                .col {
-                    margin: 1rem;
-                }

@@ -11,6 +11,8 @@
 
 <body>
     <header>
+        <div id="logoweb">
+        </div>
         <nav>
             <a href="index.html#splash">forside</a>
             <a href="om.html">om</a>
@@ -23,10 +25,13 @@
         </nav>
     </header>
     <section id="splash">
-        <div class="sectionwrapper">
-            <div id="logo"></div>
-            <h3>Kulturelt mødested - boghandel - café</h3>
-            <button>Læs mere</button>
+        <div class="sectionwrapper_splash">
+            <div class="splashimg">
+
+                <div id="logo"></div>
+                <h3>Kulturelt mødested - boghandel - café</h3>
+                <button>Læs mere</button>
+            </div>
         </div>
     </section>
     <section id="about">
@@ -36,44 +41,45 @@
                 <br>Aldrig på skuldrene af andre, eller nakken.
                 <br>Fairtrade, fairplay, dialog og konsistens.
                 <br>Det øver vi os på – hele tiden.</p>
-            <div class="txt"></div>
         </div>
     </section>
     <section id="upcoming">
         <div class="sectionwrapper">
             <h1>Kommende arrangementer</h1>
-            <div class="col">
-                <div class="up_img"></div>
-                <div class="txt">
-                    <h2>Edith Band – fortolker Edith Södergrans digte
-                    </h2>
-                    <p class="dato">Fredag den 10. maj kl. 20
-                    </p>
-                    <p class="text">Koncert med Anna Kruse</p>
-                    <button class="events">Læs mere</button>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="up_img"></div>
-                <div class="txt">
-                    <h2>Træmuseet – C. Y. Frostholm i samtale med Torben Madsen
-                    </h2>
-                    <p class="dato">Tirsdag den 21. maj kl. 19</p>
-
-                    <p class="text">Om at opleve natur og litteratur – og skrive om det</p>
-                    <button class="events">Læs mere</button>
+            <div class="content_row">
+                <div class="row">
+                    <div class="up_img"></div>
+                    <div class="txt">
+                        <h2>Edith Band – fortolker Edith Södergrans digte
+                        </h2>
+                        <p class="dato">Fredag den 10. maj kl. 20
+                        </p>
+                        <p class="text">Koncert med Anna Kruse</p>
+                        <button class="events">Læs mere</button>
+                    </div>
                 </div>
 
-            </div>
-            <div class="col">
-                <div class="up_img"></div>
-                <div class="txt">
-                    <h2>88 templer på Shikoku
-                    </h2>
-                    <p class="dato">Onsdag den 22. maj kl. 19 </p>
-                    <p class="text">Michael Drachmanns vandring som Henro</p>
-                    <button class="events">Læs mere</button>
+                <div class="row">
+                    <div class="up_img"></div>
+                    <div class="txt">
+                        <h2>Træmuseet – C. Y. Frostholm i samtale med Torben Madsen
+                        </h2>
+                        <p class="dato">Tirsdag den 21. maj kl. 19</p>
+
+                        <p class="text">Om at opleve natur og litteratur – og skrive om det</p>
+                        <button class="events">Læs mere</button>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="up_img"></div>
+                    <div class="txt">
+                        <h2>88 templer på Shikoku
+                        </h2>
+                        <p class="dato">Onsdag den 22. maj kl. 19 </p>
+                        <p class="text">Michael Drachmanns vandring som Henro</p>
+                        <button class="events">Læs mere</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,44 +92,46 @@
             <button class="books">Læs mere</button>
         </div>
     </section>
-    <section id="news">
-        <div class="sectionwrapper">
-            <h1>Nyhedsbrev</h1>
-            <div class="txt"></div>
-            <form>
-                <div class="container">
-                    <label for="navn"><b>Navn</b></label>
-                    <input type="text" placeholder="Indtast navn..." name="navn" required>
+    <div class="row_frontpage">
+        <section id="news">
+            <div class="wrapper">
+                <h1>Nyhedsbrev</h1>
+                <p>Med Tranquebars nyhedsbrev er du ajour med arrangementer og livet i boghandlen.</p>
+                <form>
+                    <div class="container">
+                        <label for="navn"><b>Navn</b></label>
+                        <input type="text" placeholder="Indtast navn..." name="navn" required>
 
-                    <label for="email"><b>E-mail</b></label>
-                    <input type="text" placeholder="Indtast e-mail..." name="email" required>
-                    <button type="submit" class="registerbtn">Tilmeld</button>
+                        <label for="email"><b>E-mail</b></label>
+                        <input type="text" placeholder="Indtast e-mail..." name="email" required>
+                        <button type="submit" class="registerbtn">Tilmeld</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <section id="membership">
+            <div class="wrapper">
+                <h1>Bliv medlem</h1>
+                <p>Tranquebar tilbyder fire medlemskaber, der giver en række fordele. <br> Læs mere og bliv medlem.</p>
+                <button>Læs mere</button>
+            </div>
+        </section>
+        <section id="find">
+            <div class="wrapper">
+                <h1>Find os</h1>
+                <div class="txt">
+                    <p>Vi holder til på <br> <b>Borgergade 14
+                            1300 København K.</b></p>
+                    <p>Vi har åbent: <br> Man - fre 10 - 18 <br> Lørdag 10 - 16</p>
+                    <p>Kontakt os på tlf. 33125512 eller mail@tranquebar.net</p>
                 </div>
-            </form>
-        </div>
-
-    </section>
-    <section id="membership">
-        <div class="sectionwrapper">
-            <h1>Bliv medlem</h1>
-            <p>Tranquebar tilbyder fire medlemskaber, der giver en række fordele. <br> Læs mere og bliv medlem.</p>
-            <button>Læs mere</button>
-        </div>
-    </section>
-    <section id="find">
-        <div class="sectionwrapper">
-            <h1>Find os</h1>
-            <div class="txt">
-                <p>Vi holder til på <br> <b>Borgergade 14
-                        1300 København K.</b></p>
-                <p>Vi har åbent: <br> Man - fre 10 - 18 <br> Lørdag 10 - 16</p>
-                <p>Kontakt os på tlf. 33125512 eller mail@tranquebar.net</p>
+                <div class="mapouter">
+                    <div class="img"></div>
+                </div>
             </div>
-            <div class="mapouter">
-                <div class="img"></div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <footer>
         <p> <b>Adresse</b> <br>
             Borgergade 14 <br>
