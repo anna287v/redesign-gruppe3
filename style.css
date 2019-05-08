@@ -408,8 +408,10 @@ footer p {
     width: 80vw;
 }
 
-/*******************************************ABOUT SLUT*************************************/
+/*******************************************OM SLUT*************************************/
 
+
+/*******************************************ARRANGEMENTER*************************************/
 
 #arrangementer .content {
     display: flex;
@@ -464,8 +466,101 @@ footer p {
 
 }
 
+/*******************************************ARRANGEMENTER SLUT*************************************/
+
+/*******************************************BOEGER*************************************/
+
+#boeger .img {
+
+    width: 50vw;
+    height: 30vw;
+    background-color: black;
+}
+
+#boeger p {
+    text-align: center;
+}
+
+/*******************************************BOEGER SLUT*************************************/
+
+/*******************************************DESIGN *************************************/
+
+#design .image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#design .img {
+
+    width: 50vw;
+    height: 30vw;
+    background-color: black;
+    margin-top: 1rem;
+
+}
+
+#design p {
+    text-align: center;
+}
+
+/*******************************************DESIGN SLUT*************************************/
 
 
+/*******************************************CAFE*************************************/
+
+
+#cafe .image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#cafe .img {
+
+    width: 50vw;
+    height: 30vw;
+    background-color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+#cafe p {
+    text-align: center;
+}
+
+#cafe .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*******************************************CAFE SLUT*************************************/
+
+
+/*******************************************MEDLEMSKABER*************************************/
+
+.btn {
+    background-color: skyblue;
+    color: white;
+    padding: 1rem 1rem;
+    margin-left: 25vw;
+    border: none;
+    cursor: pointer;
+    width: 30vw;
+    opacity: 0.9;
+    position: relative;
+    left: 30vw;
+    margin-bottom: 1rem;
+}
+
+
+/*******************************************MEDLEMSKABER SLUT*************************************/
 /***MEDIA QUERY MIN 450px ***/
 @media screen and (min-width: 450px) {
     #splash {
