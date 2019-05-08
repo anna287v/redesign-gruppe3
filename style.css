@@ -349,8 +349,8 @@ footer {
     align-items: center;
     flex-wrap: wrap;
 
-
 }
+
 
 footer p {
     color: #1d1b29;
@@ -358,6 +358,109 @@ footer p {
     text-align: center;
     width: 25vw;
 
+
+}
+
+/*****Footer slut*****/
+
+/***********OM SIDE*****************/
+
+.sectionwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-direction: column;
+
+}
+
+.video {
+    width: 50vw;
+    height: 50vw;
+    background: black;
+
+}
+
+#about .col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .txt {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#about .img {
+    width: 50vw;
+    height: 50vw;
+    background-color: black;
+}
+
+
+#about p {
+    text-align: justify;
+    text-align-last: center;
+    width: 80vw;
+}
+
+/*******************************************ABOUT SLUT*************************************/
+
+
+#arrangementer .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#arrangementer .col {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    flex-grow: 1;
+    flex-basis: 200px;
+    flex-wrap: wrap;
+
+
+}
+
+.up_img {
+    width: 25vw;
+    height: 30vw;
+    background-color: black;
+    margin-top: 1rem;
+}
+
+#arrangementer .txt {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin-left: 1rem;
+    flex-basis: 200px;
+    flex-direction: column;
+
+}
+
+#arrangementer .text {
+    margin-top: 0rem;
+    font-style: italic;
+}
+
+
+#arrangementer .dato {
+    font-size: 0.7rem;
+    color: #625f5f;
+    margin-top: -0.8;
+}
+
+
+#arrangememnter .events {
+    margin-top: 1rem;
 
 }
 
