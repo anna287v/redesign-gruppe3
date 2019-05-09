@@ -28,11 +28,14 @@ section:not(#splash) {
     max-width: 1200px;
     background-color: rgba(255, 255, 255);
     position: relative;
-    padding-top: 5rem;
+
 
 
 }
 
+img {
+    width: 100%;
+}
 
 
 .wrap_container: not(#splash) {
@@ -165,6 +168,7 @@ p {
     color: #000000;
     font-size: 1rem;
     line-height: 1.4rem;
+    max-width: 40rem;
 
 }
 
@@ -177,7 +181,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    margin: 5vw;
+    margin: 3vw;
     margin-top: 0;
 
 
@@ -190,7 +194,7 @@ button {
 #splash .splashimg {
     width: 100vw;
     height: 155vw;
-    background-color: lightblue;
+    background-image: url(img/splash.jpg);
     max-width: none;
     background-size: cover;
     display: flex;
@@ -242,8 +246,10 @@ button {
 /****ABOUT****/
 
 #about p {
+    margin-top: 10rem;
     text-align: center;
     line-height: 1.7rem;
+
 
 
 }
@@ -252,21 +258,26 @@ button {
 
 /****UPCOMING*****/
 
+
+section #upcoming {
+    margin-top: 0;
+}
+
 #upcoming .content_row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
+
 
 }
 
 #upcoming .row {
-    width: 20vw;
-    margin: 1rem;
-    flex-basis: 200px;
+    flex-basis: 100px;
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: stretch;
 
 
 
@@ -278,11 +289,16 @@ button {
 
 }
 
+#upcoming img {
+    object-fit: cover;
+    width: 30vw;
+    height: 30vw;
+    padding: 0;
+}
+
 #upcoming .txt {
     display: flex;
-    width: 40vw;
     flex-direction: column;
-    flex-grow: 2;
     align-items: space-around;
     margin-left: 1rem;
     /* flex-grow: 1;
@@ -315,24 +331,28 @@ button {
     align-items: center;
 }
 
-#book .img {
-    width: 30vw;
-    height: 30vw;
-    background-color: black;
-    flex-basis: 300px;
-    flex-grow: 1;
-}
 
 #book .txt {
     flex-basis: 300px;
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    margin: 1rem;
+
 }
 
 #book p {
     text-align: center;
+}
+
+
+
+
+#book img {
+    object-fit: contain;
+    width: 20vw;
 }
 
 /****BOOK SLUT****/
@@ -465,7 +485,7 @@ input[type=text]:focus {
 
 #om p {
     text-align: justify;
-    text-align-last: center;
+
 }
 
 .om1 {
@@ -497,46 +517,50 @@ input[type=text]:focus {
 #arrangementer .content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 
 
 }
 
 
 #arrangementer .col {
-    /*  display: flex;
-    justify-content: space-around;
-    margin: 1rem;
+
+    flex-basis: 300px;
     flex-grow: 1;
-    flex-basis: 200px;
-    flex-wrap: wrap;*/
-
-
-    margin: 1rem;
-    flex-basis: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    max-width: 399px;
+
 
 
 
 }
 
-.up_img {
+#arrangementer img {
+    object-fit: cover;
+    width: 30vw;
+    height: 30vw;
     margin: 1rem;
-    width: 150px;
+    padding: 0;
 }
 
 #arrangementer .txt {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2rem;
     flex-direction: column;
+    flex-basis: 100px;
+    margin: 1rem;
+    justify-content: center;
+
+
 
 }
 
 #arrangementer .text {
     margin-top: 0rem;
     font-style: italic;
+    line-height: 1.7rem;
 }
 
 
@@ -552,9 +576,14 @@ input[type=text]:focus {
 
 }
 
-#arrangementer .text {
+#arrangementer .main_text p {
     text-align: justify;
     font-style: normal;
+    line-height: 1.7rem;
+}
+
+#arrangementer button {
+    width: 30vw;
 }
 
 /*******************************************ARRANGEMENTER SLUT*************************************/
@@ -818,103 +847,114 @@ footer p {
     }
 
 
+}
+
+@media (orientation: landscape) {
+    #splash .splashimg {
+        width: 100vw;
+        height: 56.25vw;
+    }
 
 
-    @media (orientation: landscape) {
-        #splash .splashimg {
-            width: 100vw;
-            height: 56.25vw;
-        }
+}
 
+
+
+
+
+@media screen and (min-width: 655px) {
+    footer {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem;
 
     }
 
 
 
 
+}
 
-    @media screen and (min-width: 655px) {
-        footer {
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 1rem;
+@media screen and (min-width: 800px) {
 
-        }
 
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+
+
+
+    .wrap_container: not(#splash) {
+        padding-top: 10rem;
+
+    }
+
+    #logoweb {
+        width: 25vw;
+        height: 4.74vw;
+        background-image: url(img/logo.svg);
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    #logo {
+        display: none;
+
+
+    }
+
+    header #menu {
+        justify-content: center;
+        position: fixed;
+        background-color: #1B2326;
+        width: 100%;
+        z-index: 40;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
 
 
 
     }
 
-    @media screen and (min-width: 800px) {
+    header {
+        background-color: #1B2326;
+        position: fixed;
+        z-index: 100;
+        width: 100vw;
+
+    }
 
 
-        #menuknap {
-            display: none;
-        }
-
-        #menu.hidden {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        #menu li {
-            display: inline-block;
-        }
+    nav a {
+        margin: 0 0.25rem;
+        padding: 0 0.25rem;
 
 
+    }
+
+    #arrangementer img {
+        object-fit: cover;
+        width: 20vw;
+        height: 20vw;
+    }
 
 
-        .wrap_container: not(#splash) {
-            padding-top: 10rem;
-
-        }
-
-        #logoweb {
-            width: 25vw;
-            height: 4.74vw;
-            background-image: url(img/logo.svg);
-            background-size: cover;
-            margin: 0 auto;
-        }
-
-        #logo {
-            display: none;
-
-
-        }
-
-        header #menu {
-            justify-content: center;
-            position: fixed;
-            background-color: #1B2326;
-            width: 100%;
-            z-index: 40;
-            padding: 1rem;
-            display: flex;
-            flex-direction: row;
-
-
-
-        }
-
-        header {
-            background-color: #1B2326;
-            position: fixed;
-            z-index: 100;
-            width: 100vw;
-
-        }
-
-
-        nav a {
-            margin: 0 0.25rem;
-            padding: 0 0.25rem;
-
-
-        }
-
+    #upcoming img {
+        object-fit: cover;
+        width: 20vw;
+        height: 20vw;
 
     }
 
@@ -922,14 +962,14 @@ footer p {
         /*generelt*/
 
         .start {
-            margin-top: 5rem;
+            margin-top: 10rem;
         }
 
-        /*
+
         .wrap_container: not(#splash) {
             padding-top: 10rem;
 
-        }*/
+        }
 
         /*    h1 {
                     margin: 1rem 1rem 0.5rem 1rem;
@@ -946,6 +986,35 @@ footer p {
 
         }
 
+        #arrangementer img {
+            object-fit: cover;
+            width: 10vw;
+            height: 10vw;
+        }
+
+
+        #arrangementer button {
+            width: 10vw;
+        }
+
+
+        #upcoming img {
+            object-fit: cover;
+            width: 10vw;
+            height: 10vw;
+        }
+
+        #upcoming .text {
+            max-width: 12vw;
+        }
+
+
+
+
+
+        #upcoming h2 {
+            max-width: 10vw;
+        }
 
 
         /*  #splash h1 {
